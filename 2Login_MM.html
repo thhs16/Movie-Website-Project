@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <!-- Add more meta tags -->
+          <title>Login - My Movie</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cute Font|Pangolin|Poor Story&effect=3d|fire-animation">
+          <!-- <link rel="shortcut icon" href="../Web images/"> -->
+          <style>
+                    body{
+                              cursor: url('../Web images/cursor2.png'), auto;
+                              /* height: 781px; */
+                              margin: 0;
+                              background-repeat: no-repeat;
+                              background-image: linear-gradient(to bottom right, rgb(210, 28, 255), #903ffb, #7322fd, #5610fade) ;
+                    }
+          /******************************************************************************/
+                    table { 
+                              margin: 0;
+                              position: fixed;
+                              box-shadow: 0px 1px 10px black;
+                              width: 100%;
+                              text-align: center;
+                              /* background-image: linear-gradient(to right, rgb(210, 28, 255), #903ffb, #27a8fd, rgb(147, 207, 250)); */
+
+                              background-image: linear-gradient(to right bottom, rgb(210, 28, 255), #903ffb );
+
+                              /* background-color: black; */
+                              
+                    }
+                    table tr td {
+                              width: 10%;
+                              color: white;
+                              font-family: "Cute Font", monospace;
+                              font-size: 24px;
+                              font-weight: bold;
+                    }
+                    table tr td a {
+                              cursor: url('../Web images/pointer2.png'), pointer ;
+                              color: black;
+                              text-decoration: none;
+                    }
+                    table tr td#loco {
+                              width: 20%;
+                              padding-top:5px;
+                    }
+                    table tr td#trending {
+                              color:yellow;
+                    }
+                    table tr td#search {
+                              width: 20%;
+                              max-width: 20%;
+                    }
+                    table tr td.account {
+                              background-color: rgba(253, 253, 253, 0.3) ;
+                    }
+                    table tr td.BgChange:hover {
+                              background-color: rgba(0,0,0,0.2) ;
+                    }
+                    table tr td.BgChange:active {
+                              background-color: rgba(253, 253, 253, 0.3) ;
+                    }
+                    table tr td form input {
+                              height: 25px;
+                              margin-right: -4px;
+                              border: 3px solid silver;
+                              border-right: none;
+                              border-radius: 20px 0px 0px 20px;
+                              outline: none;
+                    }
+                    table tr td form button{
+                              margin-left: -4px;
+                              padding-top: 2.8px;
+                              padding-bottom: 5.5px;
+                              border: 3px solid silver;
+                              border-left: none;
+                              border-radius: 0px 20px 20px 0px;
+                              background-color: white;
+                    }
+                    table tr td form button img{
+                              height: 15px;
+                    }
+          
+          /******************************************************************************/
+                    div#form {
+                              display: table;
+                              width: 400px;
+                              max-width: 400px;
+                              border-radius: 5px;
+                              padding-top: 50px;
+                              padding-bottom: 60px;
+
+                              background-color: white;
+
+                              color: black;
+                              font-family: Pangolin, monospace;
+
+                              /* box-shadow: 1px 1px 10px rgb(0, 0, 0); */
+                    }
+                    #data {
+                              display: table-cell;
+                              vertical-align: middle;
+                    }
+                    /* form input.c {
+                              cursor: url('../Web images/text_cursor1.png'), auto;
+                    } */
+                    form input.a {
+                              /* cursor: url('../Web images/text_cursor1.png'), auto; */
+                              width: 225px;
+                              height: 25px;
+                              border-top: none;
+                              border-left: none;
+                              border-right: none;
+                              outline: none;
+
+                              /* font-family: Pangolin, monospace; */
+                    } 
+                    form input.b {
+                              cursor: url('../Web images/pointer2.png'), pointer;
+                              width: 200px;
+                              height: 30px;
+                              border: none;
+                              border-radius: 20px;
+                              background-image: linear-gradient(to right, rgb(210, 28, 255), #903ffb );
+
+                              font-size: 16px;
+                              font-weight: bold;
+                              /* font-family: Pangolin, monospace; */
+                    }
+                    form input.b:hover {
+                              font-size: 20px;
+                              width: 204px;
+                              height: 34px;
+                              
+                    }
+                    a.clk {
+                              cursor: url('../Web images/pointer2.png'), pointer ;
+                    }
+                    footer {
+                              margin-top: 150px;
+                              padding-top: 20px;
+                              padding-bottom: 20px;
+                              text-align: center;
+                              color: white;
+                              font-family: Pangolin, monospace;
+                              background-color: black;
+                    }
+          </style>
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav>
+          <table border="0" cellspacing="0" cellpadding="0" >
+           <tr>
+          <!--1-->  <td id="loco">
+                              <a href="./(Home)My Movie 2.html" >
+                                        <img src="../Web images/2 mm loco 3.png" width="200px" alt="img not found" title="Home" > </a>      </td>
+
+          <!--2-->  <td class="BgChange home">
+                              <a class="font-effect-3d" href="./(Home)My Movie 2.html">Home</a></td>
+          <!--3-->  <td class="BgChange">
+                              <a class="font-effect-3d" href="#">Trending</a>   </td>
+          <!--4-->  <td class="BgChange">
+                              <a class="font-effect-3d" href="#">Latest</a>   </td>
+                    <td class="BgChange">
+                              <a class="font-effect-3d" href="#">Genres</a>   </td>
+          
+          <!--6-->  <td class="BgChange">
+                              <a class="font-effect-3d" href="./MM_about.html">About</a>   </td>
+
+          <!--7-->  <td id="search"> 
+                              <form action="https://www.google.com/search" method="get" >
+                                        <input class="c" type="text" name="q" placeholder="Search..">
+                                        <button type="submit">
+                                                  <img src="../Web images/search.jpg" >
+                                        </button>
+                              </form>
+                    </td>
+
+          <!--8-->  <td class="BgChange account"><a class="font-effect-3d" href="#">Account</a>
+                           </td>
+           </tr>
+          </table>
+          </nav>
+
+<!-- Form -->
+<br><br><br><br><br><br><br>
+
+<center>
+<div id="form">
+ <div id="data">
+          <h1>Login</h1>
+          <br>
+          <form action="#" method="get" >
+                    <input class="a" type="text" name="email/usern" placeholder="Email / Username" ><br><br>
+                    <input class="a" type="password" name="pw" placeholder="Password" ><br><br><br>
+                    <input class="b" type="submit" name="submit" value="Sign in"><br><br><br><br>
+          </form>
+          Forget your password?<br>
+          <a class="clk" href="#" >Click Here</a><br><br><br>
+
+          Don't have an account?<br>
+          <a class="clk" href="./Sign Up MM2.html" >Sign Up</a>
+ </div>
+</div>  
+
+</center>
+
+</body>
+<footer>
+          All rights Reserved ©
+</footer>
+</html>

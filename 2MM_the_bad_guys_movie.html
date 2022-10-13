@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <title>The Bad Guys - My Movie</title>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cute Font|Pangolin|Poor Story&effect=3d">
+          <link href="https://github.com/sampotts/plyr/blob/master/.vscode/launch.json" >
+          <style>
+                    html {
+                              scroll-behavior: smooth;
+                    }
+                    body{  
+                              cursor: url('../Web images/cursor2.png'), auto;
+                              height: 1000PX;
+                              margin: 0;
+                              background-attachment: fixed;
+                              background-repeat: no-repeat;
+                              background-image: url("../Web images/the_bad_guys2.jpg");
+                              background-size: 100%;
+                    }
+          /******************************************************************************/
+
+                    table { 
+                              z-index: 2;
+                              margin: 0;
+                              position: fixed;
+                              box-shadow: 0px 1px 10px rgb(0, 0, 0);
+                              width: 100%;
+                              text-align: center;
+                              /* background-image: linear-gradient(to right, rgb(210, 28, 255), #903ffb, #27a8fd, rgb(147, 207, 250)); */
+
+                              background-image: linear-gradient(to right bottom, rgb(210, 28, 255), #903ffb );
+
+                              background-color: black;
+                              
+                    }
+                    table tr td {
+                              width: 10%;
+                              color: white;
+                              font-family: "Cute Font", monospace;
+                              font-size: 24px;
+                              font-weight: bold;
+                    }
+                    table tr td a {
+                              cursor: url('../Web images/pointer2.png'), auto;
+                              color: black;
+                              text-decoration: none;
+                    }
+                    table tr td#loco {
+                              width: 20%;
+                              padding-top:5px;
+                    }
+                    table tr td#trending {
+                              color:yellow;
+                    }
+                    table tr td#search {
+                              width: 20%;
+                    }
+                    table tr td.BgChange:hover {
+                              background-color: rgba(0,0,0,0.2) ;
+                    }
+                    table tr td.BgChange:active {
+                              background-color: rgba(253, 253, 253, 0.3) ;
+                    }
+                    table tr td form input {
+                              height: 25px;
+                              margin-right: -4px;
+                              border: 3px solid silver;
+                              border-right: none;
+                              border-radius: 20px 0px 0px 20px;
+                              outline: none;
+                    }
+                    table tr td form button{
+                              margin-left: -4px;
+                              padding-top: 2.8px;
+                              padding-bottom: 5.5px;
+                              border: 3px solid silver;
+                              border-left: none;
+                              border-radius: 0px 20px 20px 0px;
+                              background-color: white;
+                    }
+                    table tr td form button img{
+                              height: 15px;
+                    }
+
+          /******************************************************************************/
+                    div{      
+                              margin-left:10%;
+                              margin-right: 10%;
+                              background-color: rgba(0,0,0,0.5);
+                              /* box-shadow: 0px 0px 25px rgb(254, 254, 254); */
+                              /* height: 2000px; */
+                    }
+                    div img.poster {
+                              margin-top: 100px;
+                              border: 5px solid white;
+                              border-radius: 5px;
+                    }
+                    div a.trailar img{
+                              cursor: url('../Web images/pointer2.png'), auto;
+                              margin-top: 15px;
+                              margin-right: 10px;
+                    }
+                    div a.trailar img:hover{
+                              opacity: 0.5;
+                    }
+                    div a.watch_full_movie img{
+                              cursor: url('../Web images/pointer2.png'), auto;
+                              margin-top: 10px;
+                              margin-bottom: 4px;
+                              margin-left: 10px;
+                    }
+                    div a.watch_full_movie img:hover{
+                              opacity: 0.5;
+                    }
+                    div div.movie_title {
+                              /* z-index: -1; */
+                              display: table;
+                              position: absolute;
+                              box-shadow: initial;
+                              margin-top: 100px;
+                              width: 500px;
+                              height: 50px;
+                              left: -20px;
+                              background-image: linear-gradient(to right , rgb(210, 28, 255), #903ffb );
+                              border-top-right-radius: 5px;
+                              border-bottom-right-radius: 5px;
+                    }
+                    div div.movie_title::before {
+                              position: absolute;
+                              content: "";/*must*/
+                              top: -20px;
+                              border-top: 10px solid transparent;
+                              border-bottom: 10px solid rgb(100, 0, 128);
+                              border-left: 10px solid transparent;
+                              border-right: 10px solid rgb(100, 0, 128);
+
+                    }
+                    div div.movie_title  h2{
+                              display: table-cell;
+                              text-align: center;
+                              color: white;
+                              font-size: 40px;
+                              font-family: "Cute Font", san-serif;
+                    }
+                    video {
+                              margin-top: 200px;
+                              /* z-index: -1; */
+                    }
+                    div.ribbon {
+                              display: table;
+                              position: absolute;
+                              box-shadow: initial;
+                              margin-top: 100px;
+                              width: 200px;
+                              height: 50px;
+                              background-image: linear-gradient(to right , rgb(210, 28, 255), #903ffb );
+                              left: -20px;
+                              border-top-right-radius: 5px;
+                              border-bottom-right-radius: 5px;
+                    }
+                    div.ribbon::before {
+                              position: absolute;
+                              content: "";/*must*/
+                              top: -20px;
+                              border-top: 10px solid transparent;
+                              border-bottom: 10px solid rgb(100, 0, 128);
+                              border-left: 10px solid transparent;
+                              border-right: 10px solid rgb(100, 0, 128);
+                              }
+
+                    div div.ribbon h2.about_movie {
+                              display: table-cell;
+                              text-align: center;
+                              vertical-align: middle;
+                              color: white;
+                              font-size: 40px;
+                              font-family: "Cute Font", san-serif;
+                    }
+                    div p {
+
+                              margin-top: 170px;
+                              margin-left: 40px;
+                              margin-right: 40px;
+                              color: white;
+                              font-size: 24px;
+                              font-family: "Poor Story", san-serif;
+                    }
+                    div ul {
+                              list-style-type: none;
+                              line-height: 175%;
+                              color: white;
+                              font-family: "Cute Font", sans-serif;
+                              font-size: 28px;
+                    }
+                    div div.download {
+                              display: table;
+                              position: absolute;
+                              box-shadow: initial;
+                              width: 200px;
+                              /* height: 50px; */
+                              background-image: linear-gradient(to right , rgb(210, 28, 255), #903ffb );
+                              left: -20px;
+                              border-top-right-radius: 5px;
+                              border-bottom-right-radius: 5px;
+                              /* padding-top: 3px ;
+                              padding-bottom: 3px; */
+
+                              color: white;
+                              text-align: center;
+                              font-size: 42px;
+                              font-weight: bold;
+                              font-family: "Cute Font", sans-serif;
+                    }
+                    div div.download::before {
+                              position: absolute;
+                              content: "";/*must*/
+                              left: 0px;
+                              top: -20px;
+                              border-top: 10px solid transparent;
+                              border-bottom: 10px solid rgb(100, 0, 128);
+                              border-left: 10px solid transparent;
+                              border-right: 10px solid rgb(100, 0, 128);
+                    }
+                    div button {
+                              cursor: url('../Web images/pointer2.png'), auto;
+                              margin-top: 100px;
+                              margin-left: 40px;
+                              margin-bottom: 50px;
+                              border: none;
+                              border-radius: 60px;
+                              width: 200px;
+                              height: 50px;
+                              box-shadow: 3px 3px 0px rgba(255, 255, 255, 0.5);
+                            
+                              font-size: 16px;
+                              font-family: Pangolin, sans-serif ;
+                    }
+                    div button.first {
+                              color: black;
+                    }
+
+                    div button.second {
+                              color: red;
+
+                    }
+                    div button.first:hover {
+                              color: white;
+                              background-color: #000000;
+                              box-shadow: 0px 0px 0px;
+                    }
+                    div button.second:hover {
+                              color: white;
+                              background-color: red;
+                              box-shadow: 0px 0px 0px;
+                    }
+                    button#go_to_top {
+                              cursor: url("../Web images/pointer2.png") , auto;
+
+                              position: fixed;
+                              top: 90%;/*must*/
+                              bottom: 5%;
+                              left: 95%;/*must*/
+                              width: 35px;
+                              height: 35px;
+                              padding-top: 7px;
+                              padding-bottom: 5px;
+                              padding-left: 4px;
+                              padding-right: 3px;
+                              border: none;
+
+                              text-align: center;
+                              background-color: white;
+                              border-radius: 10px;
+                    }
+                    button#go_to_top:hover {
+                              background-image: linear-gradient(to bottom, rgb(210, 28, 255), #903ffb );
+                    }
+                    button#go_to_top:active {
+                              border: 1px dashed white;
+                    }
+
+                    footer {
+                              padding-top: 20px;
+                              padding-bottom: 20px;
+                              text-align: center;
+                              color: white;
+                              font-family: Pangolin, sans-serif;
+                              background-color: black;
+                    }
+                    
+          </style>
+          
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav>
+<table border="0" cellspacing="0" cellpadding="0" >
+          <tr>
+         <!--1-->  <td id="loco">
+                             <a href="./(Home)My Movie 2.html"  target="_self" >
+                                       <img src="../Web images/2 mm loco 3.png" width="200px" alt="img not found" title="Home" > </a>      </td>
+
+         <!--2-->  <td class="BgChange">
+                             <a class="font-effect-3d" href="./(Home)My Movie 2.html" target="_self" >Home</a>       </td>
+         <!--3-->  <td class="BgChange">
+                             <a class="font-effect-3d" href="./Trending MM3.html">Trending</a>   </td>
+         <!--4-->  <td class="BgChange">
+                             <a class="font-effect-3d" href="#">Latest</a>   </td>
+                   <td class="BgChange">
+                             <a class="font-effect-3d" href="#">Genres</a>   </td>
+         
+         <!--6-->  <td class="BgChange">
+                             <a class="font-effect-3d" href="./MM_about.html">About</a>   </td>
+
+         <!--7-->  <td id="search"> 
+                             <form action="https://www.google.com/search" method="get" >
+                                       <input type="text" name="q" placeholder="Search..">
+                                       <button type="submit">
+                                                 <img src="../Web images/search.jpg" >
+                                       </button>
+                             </form>
+                   </td>
+
+         <!--8-->  <td class="BgChange"><a class="font-effect-3d" href="./Login MM2.html">Account</a>
+                          </td>
+          </tr>
+         </table>
+         </nav>
+<!-- The Bad Guy Movie-->
+<a id="go_to_top"></a>
+  <div>
+  <center>
+
+          <img class="poster" src="../Web images/the_bad_guys.jpg" width="250px" alt="img not found" >
+
+          <br>
+          <a class="trailar" href="https://www.youtube.com/watch?v=m8Xt0yXaDPU" target="blank">
+                    <img src="../Web images/watchtrailer(2).png" width="150px" height="90px"></a>
+
+          <a class="watch_full_movie" href="#full_movie">
+                    <img src="../Web images/WatchFullMovie(png).png" width="150px" height="80px" ></a>
+
+</center>
+          <br>
+          <div class="movie_title" >
+            <h2>The Bad Guys(2022) - Full Movie</h2></div>
+            <a id="full_movie"></a>
+<center>
+          <video width="500px" poster="../Web images/the_bad_guys3.jpg" controls>
+              <source 
+              src="../Web videos/The_Bad_Guys_2022_1080p.mp4" 
+              type="video/mp4" sizes="1080">
+              <source 
+              src="../Web videos/The_Bad_Guys_2022_1080p.mp4" 
+              type="video/mp4" sizes="720">
+              <source src="" type="">
+
+              <track src="../Web videos/The_Bad_Guys_2022_1080p_English_Sub.vtt" 
+                     kind="subtitles"
+                     srclang="en"
+                     label="English"
+                     default>
+
+              <track src="../Web videos/The_Bad_Guys_2022_1080p_Korean_Sub.vtt"
+                     kind="subtitles"
+                     srclang="ko"
+                     label="Korean">
+          </video>
+  </center>
+          <div class="ribbon">
+            <h2 class="about_movie">About Movie</h2></div>
+          <p align="justify" >
+            After a lifetime of legendary heists, notorious criminals <b>Mr. Wolf, Mr. Snake, Mr. Piranha, Mr. Shark and Ms. Tarantula</b> are finally caught. To avoid a prison sentence, the animal outlaws must pull off their most challenging con yet -- becoming model citizens. Under the tutelage of their mentor, Professor Marmalade, the dubious gang sets out to fool the world that they're turning good.</p>
+
+          <ul>
+            <li><b>Release date:</b> &nbsp;&nbsp;
+              March 31, 2022 (Australia)</li>
+            <li><b>Director:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Pierre Perifel</li>
+            <li><b>Box office:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                $218.3 million</li>
+            <li><b>Music by:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Daniel Pemberton</li>
+            <li><b>Based on:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              The Bad Guys; by Aaron Blabey</li>
+            <li><b>Distributed by:</b> &nbsp;
+                Universal Pictures</li>
+          </ul>
+
+          <div class="download">Download</div>
+          <a href="../Web videos/The_Bad_Guys_2022_1080p.mp4" download>
+            <button class="first">
+              Direct Download</button></a>
+          <a href="#">   
+            <button class="second">
+              Mega nz Download</button></a>
+
+  </div>
+          <a href="#go_to_top">
+            <button id="go_to_top" >
+              <img src="../Web images/go-to-top.png" height="20px" >
+                  </button></a>
+</body>
+
+<footer>
+  All rights reserved ©
+</footer>
+
+</html>
