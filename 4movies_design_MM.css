@@ -1,5 +1,4 @@
 body {
-          background-image: url('../Web images/the_bad_guys2.jpg');
           height: 100%;
           width: 100%;
           background-position: center;
@@ -42,6 +41,27 @@ video {
 }
 .ribbon {
           color: white;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          display: inline-block;
+          background:  linear-gradient(to right , rgb(210, 28, 255), #903ffb );
+          padding: 10px;
+          margin-left: -20px;
+          border-radius: 0px 5px 5px 0px;
+          /* box-shadow: 0px 4px 4px black; */
+}
+.ribbon::before {
+          position: absolute;
+          right: 85%;
+          margin-top: 37px;
+          content: "";
+          border-top: 10px solid rgb(100, 0, 128) ;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid transparent;
+          border-right: 10px solid rgb(100, 0, 128);
+}
+video {
+          min-width: 300px;
 }
 p {
           color: white;
@@ -65,30 +85,33 @@ p {
           list-style-type: none;
           margin-left: 40px;
 }
-.ribbon {
-          margin-top: 50px;
-          margin-bottom: 50px;
-          display: inline-block;
-          background:  linear-gradient(to right , rgb(210, 28, 255), #903ffb );
-          padding: 10px;
-          margin-left: -20px;
-          border-radius: 0px 5px 5px 0px;
-          /* box-shadow: 0px 4px 4px black; */
-}
-.ribbon::before {
-          position: absolute;
-          right: 85%;
-          margin-top: 37px;
-          content: "";
-          border-top: 10px solid rgb(100, 0, 128) ;
-          border-bottom: 10px solid transparent;
-          border-left: 10px solid transparent;
-          border-right: 10px solid rgb(100, 0, 128);
+.full_movie_des {
+          min-width: 345px;
 }
 .about_movie , .download {
-          font-size: 24px;
+          font-size: 1.5em;  /* 24px */
           font-weight: bold;
+          display: block;
+          width: fit-content;
+
 }
 .first_download, .second_download {
-          display: block;
+          box-sizing: border-box;
+          padding: 10px 30px;
+          width: 180px;
+          border: none;
+          border-radius: 40px;
+          margin: 0px 0px 40px 40px ;
+          /* box-shadow: 3px 3px 0px rgba(206, 206, 206, 0.6); */
+}
+.second_download {
+          color: red;
+}
+.first_download:hover {
+         color: white;
+         background-color: black;
+}
+.second_download:hover {
+          color: white;
+          background-color: red;
 }
