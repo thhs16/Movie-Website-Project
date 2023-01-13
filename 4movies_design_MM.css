@@ -48,7 +48,7 @@ video {
           padding: 10px;
           margin-left: -20px;
           border-radius: 0px 5px 5px 0px;
-          /* box-shadow: 0px 4px 4px black; */
+          /* box-shadow: 4px 4px 4px black; */
 }
 .ribbon::before {
           position: absolute;
@@ -78,7 +78,7 @@ p {
           line-height: 60px;
           list-style-type: none;
           color: white;
-          font-family: "Cute Font", sans-serif;
+          font-family: Cute Font, sans-serif;
           font-size: 28px;
 }
 #movie_info li {

@@ -2,6 +2,9 @@
           margin: 0;
           padding: 0;
 }
+html {
+          scroll-behavior: smooth;
+}
 body {
           /* height: 800px; */
           background-image: linear-gradient(to bottom right, rgb(210, 28, 255), #903ffb, #7322fd, #5610fade) ;
